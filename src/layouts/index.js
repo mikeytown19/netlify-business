@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import './styles.sass'
+import './styles.scss'
 import config from '../../meta/config'
 
 const TemplateWrapper = ({children}) => (
