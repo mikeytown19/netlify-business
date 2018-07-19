@@ -1,4 +1,16 @@
 @import "~bulma/sass/utilities/initial-variables";
 $primary: #c90109;
 
+.navbar-item {
+  img {
+    &.nav-image-logo {
+      max-height: 7rem;
+    }
+  }
+}
+
+.hero {
+  margin-top: 77px;
+}
+
 @import "~bulma";

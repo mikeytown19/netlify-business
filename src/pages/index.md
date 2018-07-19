@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: High Mountain Home Inspections
+title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
 description: >-
   Although the home inspection portion of your transaction is only one step to
@@ -23,7 +23,7 @@ offerings:
         nulla nisi, dictum quis nibh et, euismod  semper eros. Praesent nunc
         tortor, consequat eu justo ac, dictum viverra enim.  Etiam sed dui
         dapibus mauris congue facilisis. Nulla convallis, lectus vel  vehicula
-        interdum, turpis nunc aliquet sem, ac iaculis ligula mauris id tortor. 
+        interdum, turpis nunc aliquet sem, ac iaculis ligula mauris id tortor.
         Sed eget ornare orci, quis dignissim nulla. Pellentesque aliquam
         consectetur congue.
     - image: /img/tutorials.png
@@ -56,7 +56,7 @@ testimonials:
     quote: >-
       Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
       diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula. 
+      ligula.
   - author: Subarashi San
     quote: >-
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
