@@ -10,9 +10,7 @@ offerings:
   blurbs:
     - image: /img/coffee.png
       text: >
-        <iframe width="570" height="315"
-        src="https://www.youtube.com/embed/b4w7OvfVwCI" frameborder="0"
-        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
     - image: /img/coffee-gear.png
       text: >
         Fusce semper turpis sed tortor consectetur condimentum. Nulla facilisi.
