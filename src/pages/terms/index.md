@@ -2,10 +2,7 @@
 templateKey: terms-page
 title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
-description: >-
-  Although the home inspection portion of your transaction is only one step to
-  making a wise decision, it can play a BIG role in present and future costs
-  associated with home ownership!
+content: "some text "
 offerings:
   blurbs:
     - image: /img/coffee.png

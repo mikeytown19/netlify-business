@@ -12,6 +12,9 @@ const TermsPagePreview = ({ entry, getAsset }) => {
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
+  const entryContent = entry.getIn(['data', 'content'])
+  const content = entryContent ? entryContent.toJS() : []
+
   return (
     <TermsPageTemplate
       title={entry.getIn(['data', 'title'])}
@@ -20,6 +23,7 @@ const TermsPagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       offerings={{ blurbs }}
+      content={content}
       testimonials={testimonials}
     />
   )

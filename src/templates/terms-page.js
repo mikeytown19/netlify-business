@@ -5,6 +5,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+
 // import Offerings from '../components/Offerings'
 // import Testimonials from '../components/Testimonials'
 
@@ -13,12 +14,13 @@ let PlaceHolder = 'https://bulma.io/images/placeholders/640x480.png'
 export const TermsPageTemplate = ({
   title,
   heading,
+  content,
   description,
   offerings,
   meta_title,
   meta_description,
   testimonials,
-  body,
+
 }) => (
   <div>
     <Helmet>
@@ -42,7 +44,7 @@ export const TermsPageTemplate = ({
     <div className='columns'>
       <div className='column'>
         <p className='title'>One</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam officia sapiente maiores vitae mollitia veritatis at recusandae saepe ducimus, ipsum, totam incidunt repellendus sunt. Possimus placeat minima maxime beatae vero?</p>
+        {content}
       </div>
       <div className='column'>
         <p className='title'>Two</p>
@@ -124,6 +126,7 @@ TermsPageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  content: PropTypes.string,
   testimonials: PropTypes.array,
 
 }
@@ -137,9 +140,11 @@ const TermsPage = ({data}) => {
       meta_title={frontmatter.meta_title}
       meta_description={frontmatter.meta_description}
       heading={frontmatter.heading}
+      content={frontmatter.content}
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
+
     />
   )
 }
@@ -162,10 +167,10 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         heading
+        content
         description
         offerings {
           blurbs {
-            image
             text
           }
         }
