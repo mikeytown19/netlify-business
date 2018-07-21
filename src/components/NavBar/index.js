@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className='navbar is-fixed-top' aria-label='main navigation'>
       <div className='navbar-brand'>
         <Link to='/' className='navbar-item'>
-          <img className='nav-image-logo' src={NavLogo} alt='Nav logo image'/>
+          <img className='nav-image-logo' src={NavLogo} alt='Nav logo image' />
         </Link>
         <button className='button navbar-burger' data-target='navMenu'>
           <span />
@@ -28,6 +28,10 @@ const NavBar = () => {
           </Link>
           <Link className='navbar-item' to='/blog'>
                         Blog
+          </Link>
+
+          <Link className='navbar-item' to='/terms'>
+                        Terms
           </Link>
         </div>
         <div className='navbar-end'>
