@@ -1,5 +1,21 @@
 @import "~bulma/sass/utilities/initial-variables";
-$primary: #c90109;
+$white: #fff;
+$primary: #C4140F;
+$secondary: #A8110E;
+$lightgray: #A8A2A6;
+$darkgray: #0D0716;
+$onyx: #313638;
+$maroon: #3F88C5;
+$hazel: #474863;
+$lightred: #D95952;
+
+$info: $hazel;
+$success: #F49D37;
+$warning: $onyx;
+$danger: $maroon;
+
+
+
 
 .navbar-item {
   img {
@@ -11,6 +27,10 @@ $primary: #c90109;
 
 .hero {
   margin-top: 77px;
+}
+
+.columns, .container {
+  padding: 0px 10px;
 }
 
 @import "~bulma";

@@ -4,6 +4,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 // import Offerings from '../components/Offerings'
 // import Testimonials from '../components/Testimonials'
 
@@ -17,32 +18,42 @@ export const TermsPageTemplate = ({
   meta_title,
   meta_description,
   testimonials,
+  body,
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold'>
+    <section className='hero is-primary'>
       <div className='hero-body'>
         <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
-              </div>
-            </div>
-          </div>
+          <h1 className='title'>
+            <i>{title}</i>
+          </h1>
+          <Link className='button is-danger  is-rounded is-small ' to='/contact'>
+          SCHEDULE AN INSPECTION
+          </Link>
+
         </div>
       </div>
     </section>
     <br />
+    <div className='columns'>
+      <div className='column'>
+        <p className='title'>One</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam officia sapiente maiores vitae mollitia veritatis at recusandae saepe ducimus, ipsum, totam incidunt repellendus sunt. Possimus placeat minima maxime beatae vero?</p>
+      </div>
+      <div className='column'>
+        <p className='title'>Two</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam officia sapiente maiores vitae mollitia veritatis at recusandae saepe ducimus, ipsum, totam incidunt repellendus sunt. Possimus placeat minima maxime beatae vero?</p>
+      </div>
+    </div>
     <div className='tile is-ancestor'>
       <div className='tile is-4 is-vertical is-parent'>
         <div className='tile is-child box is-warning'>
-          <p className='title'>One</p>
+          <progress className='progress is-link' value='65' max='100'>65%</progress>
+
         </div>
         <div className='tile is-child box is-primary'>
           <p className='title'>Two</p>
@@ -60,17 +71,17 @@ export const TermsPageTemplate = ({
         <div className='tile'>
           <div className='tile is-parent is-vertical'>
             <article className='tile is-child notification is-primary'>
-              <p className='title'>Vertical...</p>
+              <p className='title'>PRIMARY ...</p>
               <p className='subtitle'>Top tile</p>
             </article>
             <article className='tile is-child notification is-warning'>
-              <p className='title'>...tiles</p>
+              <p className='title'>WARNING...tiles</p>
               <p className='subtitle'>Bottom tile</p>
             </article>
           </div>
           <div className='tile is-parent'>
             <article className='tile is-child notification is-info'>
-              <p className='title'>Middle tile</p>
+              <p className='title'>INFO tile</p>
               <p className='subtitle'>With an image</p>
               <figure className='image is-4by3'>
                 <img src={PlaceHolder} />
@@ -80,7 +91,7 @@ export const TermsPageTemplate = ({
         </div>
         <div className='tile is-parent'>
           <article className='tile is-child notification is-danger'>
-            <p className='title'>Wide tile</p>
+            <p className='title'>DANGER tile</p>
             <p className='subtitle'>Aligned with the right tile</p>
             <div className='content'>
               Content
@@ -91,7 +102,7 @@ export const TermsPageTemplate = ({
       <div className='tile is-parent'>
         <article className='tile is-child notification is-success'>
           <div className='content'>
-            <p className='title'>Tall tile</p>
+            <p className='title'>SUCCESS Tall tile</p>
             <p className='subtitle'>With even more content</p>
             <div className='content'>
               Content
