@@ -9,8 +9,7 @@ description: >-
 offerings:
   blurbs:
     - image: /img/coffee.png
-      text: >
-
+      text: ''
     - image: /img/coffee-gear.png
       text: >
         Fusce semper turpis sed tortor consectetur condimentum. Nulla facilisi.
