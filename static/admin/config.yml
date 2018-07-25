@@ -31,6 +31,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: TwoColumn, name: twoColumn, widget: object, fields: [{label: title, name: title, widget: list, fields: [{label: title, name: title, widget: title}, {label: Text, name: text, widget: text}]}]}
           - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}

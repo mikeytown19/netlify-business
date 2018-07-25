@@ -9,6 +9,9 @@ const TermsPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'offerings', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
+  const entryColumns = entry.getIn(['data', 'twoColumn', 'columns'])
+  const columns = entryColumns ? entryColumns.toJS() : []
+
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
@@ -23,6 +26,7 @@ const TermsPagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       offerings={{ blurbs }}
+      twoColumn={{ columns }}
       content={content}
       testimonials={testimonials}
     />

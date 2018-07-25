@@ -3,6 +3,19 @@ templateKey: terms-page
 title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
 content: "some text "
+twoColumn:
+  columns:
+    - title: Vaibhav Sharma
+      text: >-
+        Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+        diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
+        ligula.
+    - title: Subarashi San
+      text: >-
+        Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+        dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit.
+
 offerings:
   blurbs:
     - image: /img/coffee.png

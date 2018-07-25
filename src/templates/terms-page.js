@@ -4,7 +4,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import TwoColumn from '../components/TwoColumn'
 
 // import Offerings from '../components/Offerings'
 // import Testimonials from '../components/Testimonials'
@@ -15,6 +15,7 @@ export const TermsPageTemplate = ({
   title,
   heading,
   content,
+  twoColumn,
   description,
   offerings,
   meta_title,
@@ -27,30 +28,25 @@ export const TermsPageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary'>
+    <section className='hero is-primary is-bold'>
       <div className='hero-body'>
         <div className='container'>
-          <h1 className='title'>
-            <i>{title}</i>
-          </h1>
-          <Link className='button is-danger  is-rounded is-small ' to='/contact'>
-          SCHEDULE AN INSPECTION
-          </Link>
-
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <h1 className='title'>
+                  {title}
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <br />
-    <div className='columns'>
-      <div className='column'>
-        <p className='title'>One</p>
-        {content}
-      </div>
-      <div className='column'>
-        <p className='title'>Two</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam officia sapiente maiores vitae mollitia veritatis at recusandae saepe ducimus, ipsum, totam incidunt repellendus sunt. Possimus placeat minima maxime beatae vero?</p>
-      </div>
-    </div>
+
+    <TwoColumn gridItems={twoColumn.columns} />
+
     <div className='tile is-ancestor'>
       <div className='tile is-4 is-vertical is-parent'>
         <div className='tile is-child box is-warning'>
@@ -127,6 +123,9 @@ TermsPageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   content: PropTypes.string,
+  twoColumn: PropTypes.shape({
+    columns: PropTypes.array,
+  }),
   testimonials: PropTypes.array,
 
 }
@@ -141,6 +140,7 @@ const TermsPage = ({data}) => {
       meta_description={frontmatter.meta_description}
       heading={frontmatter.heading}
       content={frontmatter.content}
+      twoColumn={frontmatter.twoColumn}
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
@@ -168,6 +168,12 @@ export const pageQuery = graphql`
         meta_description
         heading
         content
+        twoColumn {
+          columns {
+            title
+            text
+          }
+        }
         description
         offerings {
           blurbs {
