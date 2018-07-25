@@ -2,23 +2,25 @@
 templateKey: terms-page
 title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
-description: Two Column
+content: "some text "
 twoColumn:
-  title:
-    - text: |2-
-         Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
-                diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-                ligula.
-      title: 'Why choose us ? '
-    - text: |2-
-         Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
-                diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-                ligula.
-      title: 'Why me ? '
+  columns:
+  - title: Vaibhav Sharma
+    text: >-
+      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+      diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
+      ligula.
+  - title: Subarashi San
+    text: >-
+      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+      dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+
 offerings:
   blurbs:
     - image: /img/coffee.png
-      text: ''
+      text: >
+
     - image: /img/coffee-gear.png
       text: >
         Fusce semper turpis sed tortor consectetur condimentum. Nulla facilisi.

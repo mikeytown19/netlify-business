@@ -131,6 +131,7 @@ TermsPageTemplate.propTypes = {
 }
 
 const TermsPage = ({data}) => {
+  console.log(data)
   const {frontmatter} = data.markdownRemark
 
   return (
