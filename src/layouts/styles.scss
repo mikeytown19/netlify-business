@@ -9,12 +9,15 @@ $lightblue: #3F88C5;
 $hazel: #474863;
 $lightred: #D95952;
 
-$info: $hazel;
+$info: $secondary;
 $success: #F49D37;
-$warning: $onyx;
+$warning: $lightred;
 $danger: $lightblue;
 
 
+.background-red {
+  background-color: $lightred;
+}
 
 
 .navbar-item {
@@ -31,6 +34,8 @@ $danger: $lightblue;
 
 .columns, .container {
   padding: 0px 10px;
+  max-width: 1200px;
+  margin: auto !important;
 }
 
 @import "~bulma";

@@ -4,7 +4,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import TwoColumn from '../components/TwoColumn'
 
 // import Offerings from '../components/Offerings'
 // import Testimonials from '../components/Testimonials'
@@ -21,8 +20,6 @@ export const TermsPageTemplate = ({
   meta_title,
   meta_description,
   testimonials,
-
-
 }) => (
   <div>
     <Helmet>
@@ -30,7 +27,7 @@ export const TermsPageTemplate = ({
       <meta name='description' content={meta_description} />
     </Helmet>
     <section className='hero is-primary is-bold'>
-      <div className='hero-body'>
+      <div className=''>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
@@ -46,70 +43,53 @@ export const TermsPageTemplate = ({
     </section>
     <br />
 
-    <TwoColumn gridItems={twoColumn.columns} />
+    <div className='columns'>
+      <section className='section'>
+        <p className='title has-text-primary'>
+          Our Mission
+        </p>
+        <p>Although the home inspection portion of your transaction is only one step to making a wise decision, it can play a BIG role in present and future costs associated with home ownership!</p>
+      </section>
+      <section className='section'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b4w7OvfVwCI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </section>
+    </div>
+    <div className='container'>
+      <div className='tile is-ancestor'>
+        <div className='tile is-verticl is-12'>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-info'>
+                <p className='title'>Services</p>
 
-    <div className='tile is-ancestor'>
-      <div className='tile is-4 is-vertical is-parent'>
-        <div className='tile is-child box is-warning'>
-          <progress className='progress is-link' value='65' max='100'>65%</progress>
+              </article>
+            </div>
+          </div>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-primary'>
+                <p className='title'>About Us</p>
+
+              </article>
+            </div>
+          </div>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-warning'>
+                <p className='title has-text-white'>Contact</p>
+
+              </article>
+            </div>
+          </div>
 
         </div>
-        <div className='tile is-child box is-primary'>
-          <p className='title'>{content}</p>
-        </div>
-      </div>
-      <div className='tile is-parent'>
-        <div className='tile is-child box'>
-          <p className='title'>{content}</p>
-        </div>
+
       </div>
     </div>
 
-    <div className='tile is-ancestor'>
-      <div className='tile is-vertical is-8'>
-        <div className='tile'>
-          <div className='tile is-parent is-vertical'>
-            <article className='tile is-child notification is-primary'>
-              <p className='title'>PRIMARY ...</p>
-              <p className='subtitle'>Top tile</p>
-            </article>
-            <article className='tile is-child notification is-warning'>
-              <p className='title'>WARNING...tiles</p>
-              <p className='subtitle'>Bottom tile</p>
-            </article>
-          </div>
-          <div className='tile is-parent'>
-            <article className='tile is-child notification is-info'>
-              <p className='title'>INFO tile</p>
-              <p className='subtitle'>With an image</p>
-              <figure className='image is-4by3'>
-                <img src={PlaceHolder} />
-              </figure>
-            </article>
-          </div>
-        </div>
-        <div className='tile is-parent'>
-          <article className='tile is-child notification is-danger'>
-            <p className='title'>DANGER tile</p>
-            <p className='subtitle'>Aligned with the right tile</p>
-            <div className='content'>
-              Content
-            </div>
-          </article>
-        </div>
-      </div>
-      <div className='tile is-parent'>
-        <article className='tile is-child notification is-success'>
-          <div className='content'>
-            <p className='title'>SUCCESS Tall tile</p>
-            <p className='subtitle'>With even more content</p>
-            <div className='content'>
-              Content
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
+
+
+
 
   </div>
 )
@@ -146,8 +126,6 @@ const TermsPage = ({data}) => {
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
-
-
     />
   )
 }
@@ -181,6 +159,7 @@ export const pageQuery = graphql`
         description
         offerings {
           blurbs {
+            title
             text
           }
         }
