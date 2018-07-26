@@ -2,24 +2,25 @@
 templateKey: terms-page
 title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
-description: poop
-news: Some markup from prod
+content: "some text "
 twoColumn:
   columns:
-    - text: >-
-        Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
-        diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-        ligula.
-      title: Vaibhav Sharma
-    - text: >-
-        Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
-        dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit.
-      title: Subarashi San
+  - title: Vaibhav Sharma
+    text: >-
+      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+      diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
+      ligula.
+  - title: Subarashi San
+    text: >-
+      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+      dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+
 offerings:
   blurbs:
     - image: /img/coffee.png
-      text: ''
+      text: >
+
     - image: /img/coffee-gear.png
       text: >
         Fusce semper turpis sed tortor consectetur condimentum. Nulla facilisi.
@@ -76,4 +77,3 @@ meta_description: >-
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
 ---
-
