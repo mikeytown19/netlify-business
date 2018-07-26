@@ -54,12 +54,12 @@ export const TermsPageTemplate = ({
 
         </div>
         <div className='tile is-child box is-primary'>
-          <p className='title'>Two</p>
+          <p className='title'>{content}</p>
         </div>
       </div>
       <div className='tile is-parent'>
         <div className='tile is-child box'>
-          <p className='title'>Three</p>
+          <p className='title'>{content}</p>
         </div>
       </div>
     </div>
