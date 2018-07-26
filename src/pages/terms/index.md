@@ -3,6 +3,7 @@ templateKey: terms-page
 title: '"Big League Service with a Small Town Feel"'
 heading: '"Big League Service with a Small Town Feel"'
 content: "some text "
+news: "Some markup"
 twoColumn:
   columns:
   - title: Vaibhav Sharma

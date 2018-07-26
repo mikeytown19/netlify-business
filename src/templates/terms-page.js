@@ -21,6 +21,7 @@ export const TermsPageTemplate = ({
   meta_title,
   meta_description,
   testimonials,
+  news,
 
 }) => (
   <div>
@@ -54,7 +55,7 @@ export const TermsPageTemplate = ({
 
         </div>
         <div className='tile is-child box is-primary'>
-          <p className='title'>{content}</p>
+          <p className='title'>{news}</p>
         </div>
       </div>
       <div className='tile is-parent'>
@@ -127,7 +128,7 @@ TermsPageTemplate.propTypes = {
     columns: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-
+  news: PropTypes.string,
 }
 
 const TermsPage = ({data}) => {
@@ -145,6 +146,7 @@ const TermsPage = ({data}) => {
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
+      news={frontmatter.news}
 
     />
   )
@@ -168,6 +170,7 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         heading
+        news
         content
         twoColumn {
           columns {

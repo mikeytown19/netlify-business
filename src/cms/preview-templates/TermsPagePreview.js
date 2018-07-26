@@ -29,6 +29,7 @@ const TermsPagePreview = ({ entry, getAsset }) => {
       twoColumn={{ columns }}
       content={content}
       testimonials={testimonials}
+      new={entry.getIn(['data', 'new'])}
     />
   )
 }
