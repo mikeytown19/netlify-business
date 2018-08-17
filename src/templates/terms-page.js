@@ -26,13 +26,13 @@ export const TermsPageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold'>
+    <section className='hero is-bold bg-home'>
       <div className=''>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='title'>
+                <h1 className='title color-white text-center'>
                   {title}
                 </h1>
               </div>
