@@ -17,7 +17,7 @@ const TemplateWrapper = ({children}) => (
       <meta name='description' content={config.siteDescription} />
     </Helmet>
     <NavBar />
-    <div>{children()}</div>
+    <div className='body'>{children()}</div>
     <Footer />
   </div>
 )

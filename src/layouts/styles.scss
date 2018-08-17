@@ -14,6 +14,47 @@ $success: #F49D37;
 $warning: $lightred;
 $danger: $lightblue;
 
+$font-size: 15;
+
+//// define global padding ////
+$padding: (
+  desktop: (
+    large: 80px,
+    medium: 50px,
+    small: 30px
+  ),
+  tablet: (
+    large: 60px,
+    medium: 40px,
+    small: 30px
+  ),
+  mobile: (
+    large: 40px,
+    medium: 20px,
+    small: 20px
+  )
+);
+
+@function em($pixels, $context: $font-size) {
+  @return #{$pixels / $context}em;
+}
+
+body {
+  // headers
+
+}
+
+.color-white {
+  color: $white;
+}
+
+.font-large {
+  font-size: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
 
 .title {
   &.color-white {
@@ -49,10 +90,30 @@ $danger: $lightblue;
 }
 
 .bg-home {
-  background:linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.3)), url('../img/bg-home.jpg');
-  height: 50vh;
+  background:linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.6)), url('../img/bg-home.jpg');
+  min-height: 40vh;
   background-size: cover;
   background-position: 50% 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 641px) {
+  .youtube {
+    width: auto;
+  }
 }
 
 @import "~bulma";

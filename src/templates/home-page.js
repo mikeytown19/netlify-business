@@ -58,6 +58,38 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
+    <div className='container'>
+      <div className='tile is-ancestor'>
+        <div className='tile is-verticl is-12'>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-info'>
+                <p className='title'>Services</p>
+
+              </article>
+            </div>
+          </div>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-primary'>
+                <p className='title'>About Us</p>
+
+              </article>
+            </div>
+          </div>
+          <div className='tile'>
+            <div className='tile is-parent'>
+              <article className='tile is-child notification is-warning'>
+                <p className='title has-text-white'>Contact</p>
+
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </div>
 )
 
