@@ -60,6 +60,14 @@ body {
 
 }
 
+ul {
+  li {
+    color: $primary;
+    padding-bottom: 5px;
+    list-style-type: square;
+  }
+}
+
 
 
 .color-white {

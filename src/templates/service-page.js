@@ -23,6 +23,19 @@ export const ServicePageTemplate = ({
       <section className="columns">
        <div className="column">
           <p className="title">Services</p>
+
+          <ul>
+            <li>Pre-Listing Home Inspection</li>
+            <li>Infrared Imaging</li>
+            <li>Radon Testing NRPP#107168RT</li>
+            <li>Lead Base Paint Testing</li>
+            <li>Asbestos Testing</li>
+            <li>Mold/Air Quality Sampling(Spore traps)</li>
+            <li>Main Sewer Line Scope/Camera</li>
+            <li>Methamphetimine Testing</li>
+            <li>Termite Inspections</li>
+          </ul>
+          <br/>
           <p>Your report will contain many details from materials, structures and finishes. We include dozens of pictures along with model reference numbers, as well as recommendations and reasonings for repair items listed. </p>
 
           <p> We highly encourage you to be present at the end of the inspection for a final walk through to allow us to summarize our findings. We take pride in taking as much time as you need to gain a better understanding of your investment! Download the Investment Property Disclosure/Agreement <a href='Investment Property Disclosure/Agreement'>here:</a></p>
