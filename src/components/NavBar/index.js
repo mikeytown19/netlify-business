@@ -20,8 +20,8 @@ const NavBar = () => {
       </div>
       <div className='navbar-menu' id='navMenu'>
         <div className='navbar-start'>
-          <Link className='navbar-item' to='/pricing'>
-                        Pricing
+          <Link className='navbar-item' to='/services'>
+                        Services
           </Link>
           <Link className='navbar-item' to='/about'>
                         About

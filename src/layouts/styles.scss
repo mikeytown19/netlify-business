@@ -126,9 +126,12 @@ body {
   margin: 0 5px;
 }
 
-@media screen and (max-width: 641px) {
-  .youtube {
-    width: auto;
+
+@media screen and (max-width: 800px) {
+
+  .img-bottom-small {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 

@@ -45,15 +45,15 @@ export const HomePageTemplate = ({
     <br />
 
     <div className='columns'>
-      <section className='section'>
+      <div className='column is-half'>
         <p className='title has-text-primary'>
           Our Mission
         </p>
         <p>Although the home inspection portion of your transaction is only one step to making a wise decision, it can play a BIG role in present and future costs associated with home ownership!</p>
-      </section>
-      <section className='section'>
-        <iframe className="youtube" width='560' height='315' src='https://www.youtube.com/embed/b4w7OvfVwCI?rel=0&amp;showinfo=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
-      </section>
+      </div>
+      <div className='column is-half'>
+        <iframe className="youtube" width='100%' height='315' src='https://www.youtube.com/embed/b4w7OvfVwCI?rel=0&amp;showinfo=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+      </div>
     </div>
 
         <div className='columns'>

@@ -7,7 +7,7 @@ import facebook from '../../img/facebook.png'
 import twitter from '../../img/twitter.png'
 import internachi from '../../img/internachi.png'
 import militarydiscount from '../../img/militarydiscount.jpg'
-import landlord from '../../img/landlord.pdf'
+import landlord from '../../img/militarydiscount.jpg'
 
 
 const Footer = () => {

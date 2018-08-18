@@ -33,7 +33,7 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
       </section>
 
       <section className="section">
-        <div className='columns'>
+        <div className='columns img-bottom-small'>
           <div className='column '>
             <img src={John} alt=''/>
           </div>
