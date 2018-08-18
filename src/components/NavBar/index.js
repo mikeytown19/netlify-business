@@ -7,7 +7,7 @@ import NavLogo from './../../img/nav-img.png'
 
 const NavBar = () => {
   return (
-    <nav className='navbar columns' aria-label='main navigation'>
+    <nav className='navbar ' aria-label='main navigation'>
       <div className='navbar-brand'>
         <Link to='/' className='navbar-item'>
           <img className='nav-image-logo' src={NavLogo} alt='Nav logo image' />

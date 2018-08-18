@@ -19,24 +19,122 @@ export const OwnershipPageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <h1 className='title'>
-                    {title}
-                  </h1>
-                  <h2 className='subtitle'>
-                    {subtitle}
-                  </h2>
-                </div>
+      <div className="section">
+      <section className="columns">
+       <div className="column">
+          <p className="title">Ownership</p>
+
+            <div className="columns">
+          <div className="column">
+            <article className="message is-warning">
+              <div className="message-header">
+                <p className="is-size-5 color-white">Exterior</p>
               </div>
+              <div className="message-body">
+                <ul>
+                  <li>Secure wall cladding, trim.</li>
+                  <li>Paint all exterior wood.</li>
+                  <li>Monitor concrete for settlement</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+            <div className="column">
+              <article className="message is-warning">
+                <div className="message-header ">
+                  <p className="is-size-5 color-white">Roof</p>
+                </div>
+                <div className="message-body">
+                  <ul>
+                    <li> Monitor shingles.</li>
+                    <li> Install and maintain gutter system.</li>
+                    <li> Secure fascia, soffit, trim.</li>
+                    <li> Direct water away from foundation and high traffic areas.</li>
+                  </ul>
+                </div>
+              </article>
             </div>
           </div>
+
+          <div className="columns">
+            <div className="column">
+              <article className="message is-warning">
+                <div className="message-header">
+                  <p className="is-size-5 color-white">Hvac</p>
+                </div>
+                <div className="message-body">
+                  <ul>
+                    <li>Cover A/C unit with canvas (breathable) cover during winter.</li>
+                    <li>Insulate exterior refrigerant lines.</li>
+                    <li>Clean filter around compression unit.</li>
+                    <li>Change air filter often</li>
+                    <li>Have "green sticker" service annually.</li>
+                    <li>Maintain condensate line.          </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+              <div className="column">
+                <article className="message is-warning">
+                  <div className="message-header">
+                    <p className="is-size-5 color-white">Plumbing</p>
+                  </div>
+                  <div className="message-body">
+
+                    <ul>
+                      <li>Get a water softener! (Contact us for more information.)</li>
+                      <li>Secure toilets.</li>
+                      <li>MONITOR for leaks. (Because they are inevitable)</li>
+                      <li>Drain water heater 1 time per year. </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+          </div>
+
+          <div className="columns">
+            <div className="column">
+              <article className="message is-warning">
+                <div className="message-header">
+                  <p className="is-size-5 color-white">Electriacal</p>
+                </div>
+                <div className="message-body">
+                  <ul>
+                    <li>Install cove plates.</li>
+                    <li>Install cove plates.</li>
+                    <li>Test GFCI's often.</li>
+                    <li>Label panel box clearly.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+              <div className="column">
+                <article className="message is-warning">
+                  <div className="message-header">
+                    <p className="is-size-5 color-white">Misc</p>
+                  </div>
+                  <div className="message-body">
+                    <ul>
+                      <li>Install ceiling cans.</li>
+                      <li>Vacuum often.</li>
+                      <li>Clean/Maintain your jetted tub.</li>
+                      <li>Update your insulation! (Contact us for more information.)</li>
+                    </ul>
+
+                  </div>
+                </article>
+              </div>
+          </div>
+          <br/>
+          <p>Your report will contain many details from materials, structures and finishes. We include dozens of pictures along with model reference numbers, as well as recommendations and reasonings for repair items listed. </p>
+
+          <p> We highly encourage you to be present at the end of the inspection for a final walk through to allow us to summarize our findings. We take pride in taking as much time as you need to gain a better understanding of your investment! Download the Investment Property Disclosure/Agreement <a href='Investment Property Disclosure/Agreement'>here:</a></p>
         </div>
       </section>
+
+    </div>
+
+
 
     </div>
   )

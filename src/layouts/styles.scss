@@ -58,15 +58,18 @@ body {
     }
   }
 
+  ul {
+    padding-left: 14px;
+    li {
+      color: $primary;
+      padding-bottom: 5px;
+      list-style-type: circle;
+    }
+  }
+
 }
 
-ul {
-  li {
-    color: $primary;
-    padding-bottom: 5px;
-    list-style-type: square;
-  }
-}
+
 
 
 
@@ -116,7 +119,7 @@ ul {
 }
 
 .bg-home {
-  background:linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.6)), url('../img/bg-home.jpg');
+  background:linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.6)), url('../img/bg-home1.jpg');
   min-height: 40vh;
   background-size: cover;
   background-position: 50% 90%;
@@ -138,6 +141,18 @@ ul {
 
 .social-media-icons {
   margin: 0 5px;
+}
+
+.message {
+  height: 100%;
+
+  &.message.is-warning .message-body {
+      border-color: #fdf7f7;
+  }
+}
+
+.tools {
+  max-height: 600px;
 }
 
 

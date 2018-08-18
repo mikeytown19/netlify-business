@@ -19,31 +19,72 @@ export const ContactPageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <h1 className='title'>
-                    {title}
-                  </h1>
-                  <h2 className='subtitle'>
-                    {subtitle}
-                  </h2>
-                </div>
-              </div>
-            </div>
+
+      <div className="section">
+      <section className="columns section">
+
+
+        <div className="column is-5">
+        <p className="title">Contact Us</p>
+        <form name="contact" method="POST" netlify>
+         <div className="field">
+          <label className="label">Name</label>
+          <div className="control">
+            <input className="input" type="text" placeholder="Full Name" />
           </div>
         </div>
-      </section>
-      <section className='section'>
-        <div className='container'>
-          {contacts.map((contact, id) =>
-            <Contact key={id} email={contact.email} description={contact.description} />
-          )}
+
+
+        <div className="field">
+          <label className="label">Name</label>
+          <div className="control">
+            <input className="input" type="email" placeholder="Email" />
+          </div>
         </div>
+
+
+        <div className="field">
+          <label className="label">Number</label>
+          <div className="control">
+            <input className="input" type="tel" placeholder="Phone Number" />
+          </div>
+        </div>
+
+
+
+
+
+        <div className="field">
+          <label className="label">Message</label>
+          <div className="control">
+            <textarea className="textarea" placeholder="Write us"></textarea>
+          </div>
+        </div>
+
+        <div className="field is-grouped">
+          <div className="control">
+            <button className="button is-link">Submit</button>
+          </div>
+          <div className="control">
+            <button className="button is-text">Cancel</button>
+          </div>
+        </div>
+
+
+      </form>
+
+        </div>
+
+
       </section>
+
+
+      </div>
+
+
+
+
+
     </div>
   )
 }
