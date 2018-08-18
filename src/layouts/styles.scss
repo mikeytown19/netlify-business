@@ -3,6 +3,7 @@ $white: #fff;
 $primary: #C4140F;
 $secondary: #A8110E;
 $lightgray: #A8A2A6;
+$gray: #dbdbdb;
 $darkgray: #0D0716;
 $onyx: #313638;
 $lightblue: #3F88C5;
@@ -41,8 +42,19 @@ $padding: (
 
 body {
   // headers
+  .footer {
+    background-color: $gray;
+  }
+
+  p {
+    //max-width: 800px;
+    //margin-bottom: 14px;
+    padding-bottom: 14px;
+  }
 
 }
+
+
 
 .color-white {
   color: $white;
@@ -110,6 +122,10 @@ body {
   margin-top: 10px;
 }
 
+.social-media-icons {
+  margin: 0 5px;
+}
+
 @media screen and (max-width: 641px) {
   .youtube {
     width: auto;
@@ -117,3 +133,4 @@ body {
 }
 
 @import "~bulma";
+

@@ -4,12 +4,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Offerings from '../components/Offerings'
+import Link from 'gatsby-link'
 import Testimonials from '../components/Testimonials'
+
+// import Offerings from '../components/Offerings'
+// import Testimonials from '../components/Testimonials'
+
+
 
 export const HomePageTemplate = ({
   title,
   heading,
+  content,
+  twoColumn,
   description,
   offerings,
   meta_title,
@@ -21,75 +28,42 @@ export const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
-              </div>
-            </div>
+    <div className="section  bg-home">
+      <section className='section is-bold'>
+          <div className='flex-center'>
+            <h1 className='title color-white text-center is-size-2'>
+              {title}
+            </h1>
+            <p className='color-white font-large text-center'>Serving the Wasatch front Area with More Than 6,000 Homes Inspected!</p>
+
+            <a className='color-white' href='tel:801-699-7485'><h2 className="is-size-4">801-699-7485</h2></a>
+            <Link className='button is-primary btn' to='/contact'>Contact Us</Link>
+
           </div>
-        </div>
-      </div>
-    </section>
-    <section className='section section--gradient'>
-      <div className='container'>
-
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div className='container'>
-      <div className='tile is-ancestor'>
-        <div className='tile is-verticl is-12'>
-          <div className='tile'>
-            <div className='tile is-parent'>
-              <article className='tile is-child notification is-info'>
-                <p className='title'>Services</p>
-
-              </article>
-            </div>
-          </div>
-          <div className='tile'>
-            <div className='tile is-parent'>
-              <article className='tile is-child notification is-primary'>
-                <p className='title'>About Us</p>
-
-              </article>
-            </div>
-          </div>
-          <div className='tile'>
-            <div className='tile is-parent'>
-              <article className='tile is-child notification is-warning'>
-                <p className='title has-text-white'>Contact</p>
-
-              </article>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+      </section>
     </div>
+    <br />
+
+    <div className='columns'>
+      <section className='section'>
+        <p className='title has-text-primary'>
+          Our Mission
+        </p>
+        <p>Although the home inspection portion of your transaction is only one step to making a wise decision, it can play a BIG role in present and future costs associated with home ownership!</p>
+      </section>
+      <section className='section'>
+        <iframe className="youtube" width='560' height='315' src='https://www.youtube.com/embed/b4w7OvfVwCI?rel=0&amp;showinfo=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+      </section>
+    </div>
+
+        <div className='columns'>
+      <section className='section'>
+      <h3 className='has-text-weight-semibold is-size-3 has-text-primary'>Testimonials</h3>
+   <Testimonials testimonials={testimonials} />
+      </section>
+    </div>
+
+
   </div>
 )
 
@@ -102,11 +76,16 @@ HomePageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  content: PropTypes.string,
+  twoColumn: PropTypes.shape({
+    columns: PropTypes.array,
+  }),
   testimonials: PropTypes.array,
 
 }
 
 const HomePage = ({data}) => {
+  console.log(data)
   const {frontmatter} = data.markdownRemark
 
   return (
@@ -115,6 +94,8 @@ const HomePage = ({data}) => {
       meta_title={frontmatter.meta_title}
       meta_description={frontmatter.meta_description}
       heading={frontmatter.heading}
+      content={frontmatter.content}
+      twoColumn={frontmatter.twoColumn}
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
@@ -133,17 +114,25 @@ HomePage.propTypes = {
 export default HomePage
 
 export const pageQuery = graphql`
-  query IndexPage($id: String!) {
+  query HomePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         meta_title
         meta_description
         heading
+
+        content
+        twoColumn {
+          columns {
+            title
+            text
+          }
+        }
         description
         offerings {
           blurbs {
-            image
+            title
             text
           }
         }
