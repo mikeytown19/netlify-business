@@ -175,6 +175,10 @@ body {
   .navbar {
     border-bottom: lightgray solid 0.1vmin;
   }
+
+  .navbar-item img.nav-image-logo {
+    max-height: 5rem;
+    }
 }
 
 @import "~bulma";

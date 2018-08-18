@@ -28,7 +28,7 @@ export const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <div className="section  bg-home">
+    <div className="  bg-home">
       <section className='section is-bold'>
           <div className='flex-center'>
             <h1 className='title color-white text-center is-size-2'>
@@ -36,8 +36,12 @@ export const HomePageTemplate = ({
             </h1>
             <p className='color-white font-large text-center'>Serving the Wasatch front Area with More Than 6,000 Homes Inspected!</p>
 
-            <a className='color-white' href='tel:801-699-7485'><h2 className="is-size-4">801-699-7485</h2></a>
-            <Link className='button is-primary btn' to='/contact'>Contact Us</Link>
+            <div className="columns">
+              <a className='color-white' href='tel:801-699-7485'><h2 className="is-size-4">801-699-7485</h2></a>
+              <br/><br/><br/><br/>
+
+              {/* <Link className='button is-primary btn is-hidden-mobile' to='/contact'>Contact Us</Link> */}
+            </div>
 
           </div>
       </section>
