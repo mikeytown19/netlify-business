@@ -99,6 +99,15 @@ body {
   background-color: $lightred;
 }
 
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: none;
+}
+
+.navbar-container {
+  border-bottom: lightgray solid 0.1vmin;
+}
 
 .navbar-item {
   img {
@@ -161,6 +170,10 @@ body {
   .img-bottom-small {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .navbar {
+    border-bottom: lightgray solid 0.1vmin;
   }
 }
 

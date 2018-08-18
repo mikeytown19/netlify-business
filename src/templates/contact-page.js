@@ -26,49 +26,23 @@ export const ContactPageTemplate = ({
 
         <div className="column is-5">
         <p className="title">Contact Us</p>
-        <form name="contact" method="POST" netlify>
-         <div className="field">
-          <label className="label">Name</label>
-          <div className="control">
-            <input className="input" type="text" placeholder="Full Name" />
-          </div>
-        </div>
-
-
-        <div className="field">
-          <label className="label">Name</label>
-          <div className="control">
-            <input className="input" type="email" placeholder="Email" />
-          </div>
-        </div>
-
-
-        <div className="field">
-          <label className="label">Number</label>
-          <div className="control">
-            <input className="input" type="tel" placeholder="Phone Number" />
-          </div>
-        </div>
-
-
-
-
-
-        <div className="field">
-          <label className="label">Message</label>
-          <div className="control">
-            <textarea className="textarea" placeholder="Write us"></textarea>
-          </div>
-        </div>
-
-        <div className="field is-grouped">
-          <div className="control">
-            <button className="button is-link">Submit</button>
-          </div>
-          <div className="control">
-            <button className="button is-text">Cancel</button>
-          </div>
-        </div>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <div className="field half first">
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" id="name" />
+    </div>
+    <div className="field half">
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" id="email" />
+    </div>
+    <div className="field">
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" rows="6"></textarea>
+    </div>
+    <ul className="actions">
+        <li><input type="submit" value="Send Message" className="special" /></li>
+        <li><input type="reset" value="Clear" /></li>
+    </ul>
 
 
       </form>
