@@ -32,7 +32,7 @@ export const ContactPageTemplate = ({
          <div className="field">
           <label className="label" for="name">Name</label>
           <div className="control">
-            <input className="input" type="text"id="name" placeholder="Full Name" />
+            <input className="input" type="text"id="name" name="name" placeholder="Full Name" />
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export const ContactPageTemplate = ({
         <div className="field">
           <label className="label" for="email">Email</label>
           <div className="control">
-            <input className="input" type="email" id="email"placeholder="Email" />
+            <input className="input" type="email" name="email"id="email"placeholder="Email" />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export const ContactPageTemplate = ({
         <div className="field">
           <label className="label" for="number">Number</label>
           <div className="control">
-            <input className="input" type="tel" id="number" placeholder="Phone Number" />
+            <input className="input" type="tel" id="number" name="number"placeholder="Phone Number" />
           </div>
         </div>
 
@@ -59,7 +59,7 @@ export const ContactPageTemplate = ({
         <div className="field">
           <label className="label" for="message">Message</label>
           <div className="control">
-            <textarea className="textarea" id="message" placeholder="Write us"></textarea>
+            <textarea className="textarea" id="message" name="message"placeholder="Write us"></textarea>
           </div>
         </div>
 
