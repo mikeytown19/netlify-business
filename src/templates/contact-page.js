@@ -5,6 +5,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Contact from '../components/Contact'
+import Form from '../components/Form'
 
 export const ContactPageTemplate = ({
   title,
@@ -26,7 +27,8 @@ export const ContactPageTemplate = ({
 
         <div className="column is-5">
         <p className="title">Contact Us</p>
-        <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+        <Form formName="subscribe_form" inputName="email" />
+        {/* <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
          <div className="field">
           <label className="label">Name</label>
@@ -72,7 +74,7 @@ export const ContactPageTemplate = ({
         </div>
 
 
-      </form>
+      </form> */}
 
         </div>
 

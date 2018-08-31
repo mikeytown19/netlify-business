@@ -4,7 +4,7 @@
 import React from 'react'
 import config from '../../../meta/config'
 import facebook from '../../img/facebook.png'
-import twitter from '../../img/twitter.png'
+import instagram from '../../img/instagram.svg'
 import internachi from '../../img/internachi.png'
 import militarydiscount from '../../img/militarydiscount.jpg'
 import landlord from '../../img/militarydiscount.jpg'
@@ -46,8 +46,8 @@ const Footer = () => {
                 <a href='https://www.facebook.com/HighMountainHomeInspections/'>
                   <img src={facebook} alt='' className="social-media-icons" />
                 </a>
-                <a href='https://twitter.com/HighMountainHom'>
-                  <img src={twitter} alt='' className="social-media-icons" />
+                <a href='https://www.instagram.com/highmountainhomes/'>
+                  <img src={instagram} alt='' className="social-media-icons" />
                 </a>
             </div>
           </div>

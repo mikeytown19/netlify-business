@@ -50,16 +50,12 @@ offerings:
         massa quis euismod convallis, felis elit sodales urna, at aliquet mi
         elit auctor  risus.
 testimonials:
-  - author: Vaibhav Sharma
+  - author: Tyler Higgins
     quote: >-
-      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
-      diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula.
+      High Mountain Home Inspections has done the home inspection on multiple properties of ours over the past few years. Kory does a very thorough job and doesn't leave anything out, or worry you unnecessarily. They are reliable and trustworthy inspectors. A great deal for peace of mind!
   - author: Subarashi San
     quote: >-
-      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
-      dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.
+      High Mountain Home Inspections are the best in the business! They are incredibly knowledgeable, always take wonderful care of our clients, provide the most detailed reports and give our clients the piece of mind that they know exactly what they are buying! We recommend High Mountain to all of our clients!!! Thanks guys for such great service!
 meta_title: Home | Gatsby Starter Business
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur

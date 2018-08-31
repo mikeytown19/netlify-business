@@ -82,7 +82,6 @@ export const OwnershipPageTemplate = ({
                   <div className="message-body">
 
                     <ul>
-                      <li>Get a water softener! (Contact us for more information.)</li>
                       <li>Secure toilets.</li>
                       <li>MONITOR for leaks. (Because they are inevitable)</li>
                       <li>Drain water heater 1 time per year. </li>
@@ -96,7 +95,7 @@ export const OwnershipPageTemplate = ({
             <div className="column">
               <article className="message is-warning">
                 <div className="message-header">
-                  <p className="is-size-5 color-white">Electriacal</p>
+                  <p className="is-size-5 color-white">Electrical</p>
                 </div>
                 <div className="message-body">
                   <ul>
@@ -128,7 +127,7 @@ export const OwnershipPageTemplate = ({
           <br/>
           <p>Your report will contain many details from materials, structures and finishes. We include dozens of pictures along with model reference numbers, as well as recommendations and reasonings for repair items listed. </p>
 
-          <p> We highly encourage you to be present at the end of the inspection for a final walk through to allow us to summarize our findings. We take pride in taking as much time as you need to gain a better understanding of your investment! Download the Investment Property Disclosure/Agreement <a href='Investment Property Disclosure/Agreement'>here:</a></p>
+          <p> We highly encourage you to be present at the end of the inspection for a final walk through to allow us to summarize our findings. We take pride in taking as much time as you need to gain a better understanding of your investment!</p>
         </div>
       </section>
 
