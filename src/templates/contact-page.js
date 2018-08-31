@@ -30,25 +30,25 @@ export const ContactPageTemplate = ({
         <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
          <div className="field">
-          <label className="label">Name</label>
+          <label className="label" for="name">Name</label>
           <div className="control">
-            <input className="input" type="text" placeholder="Full Name" />
+            <input className="input" type="text"id="name" placeholder="Full Name" />
           </div>
         </div>
 
 
         <div className="field">
-          <label className="label">Name</label>
+          <label className="label" for="email">Email</label>
           <div className="control">
-            <input className="input" type="email" placeholder="Email" />
+            <input className="input" type="email" id="email"placeholder="Email" />
           </div>
         </div>
 
 
         <div className="field">
-          <label className="label">Number</label>
+          <label className="label" for="number">Number</label>
           <div className="control">
-            <input className="input" type="tel" placeholder="Phone Number" />
+            <input className="input" type="tel" id="number" placeholder="Phone Number" />
           </div>
         </div>
 
@@ -57,9 +57,9 @@ export const ContactPageTemplate = ({
 
 
         <div className="field">
-          <label className="label">Message</label>
+          <label className="label" for="message">Message</label>
           <div className="control">
-            <textarea className="textarea" placeholder="Write us"></textarea>
+            <textarea className="textarea" id="message" placeholder="Write us"></textarea>
           </div>
         </div>
 
