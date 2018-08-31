@@ -27,8 +27,7 @@ export const ContactPageTemplate = ({
 
         <div className="column is-5">
         <p className="title">Contact Us</p>
-        <Form formName="subscribe_form" inputName="email" />
-        {/* <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
          <div className="field">
           <label className="label">Name</label>
@@ -74,7 +73,7 @@ export const ContactPageTemplate = ({
         </div>
 
 
-      </form> */}
+      </form>
 
         </div>
 

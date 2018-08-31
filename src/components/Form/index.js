@@ -26,7 +26,7 @@ const Form = props => {
           required
         />
       </div>
-      <button type="submit" className="button is-link">Submit</button>
+       <button type="submit" className="button is-link">Submit</button>
       <button className="button is-text">Cancel</button>
     </form>
   );
