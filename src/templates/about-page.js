@@ -8,6 +8,7 @@ import Content, {HTMLContent} from '../components/Content'
 import Kory from '../img/kory.jpg'
 import John from '../img/john.jpg'
 import Corbet from '../img/corbet.jpg'
+import Shauna from '../img/shauna.jpg'
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
@@ -56,6 +57,19 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
           </div>
           <div className='column '>
             <img src={Corbet} alt=''/>
+          </div>
+
+        </div>
+      </section>
+
+       <section className="section">
+        <div className='columns img-bottom-small'>
+          <div className='column '>
+            <img src={Shauna} alt=''/>
+          </div>
+          <div className='column is-two-thirds'>
+            <p className="title">Shauna Allen</p>
+            <p>A little about Shauna.  She lives in Plain City with her Husband Cole and 4 awesome kids Cooper, Ty, Aspen & Kaiya!  She loves running, camping, hiking, boating, playing sports and just spending time with her family! </p>
           </div>
 
         </div>
