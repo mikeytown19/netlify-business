@@ -69,7 +69,7 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
           </div>
           <div className='column is-two-thirds'>
             <p className="title">Shauna Allen</p>
-            <p>A little about Shauna.  She lives in Plain City with her Husband Cole and 4 awesome kids Cooper, Ty, Aspen & Kaiya!  She loves running, camping, hiking, boating, playing sports and just spending time with her family! </p>
+            <p>Shauna lives in Plain City with her Husband Cole and 4 awesome kids Cooper, Ty, Aspen, & Kaiya.  She loves running, camping, hiking, boating, playing sports, and just spending time with her family. </p>
           </div>
 
         </div>
