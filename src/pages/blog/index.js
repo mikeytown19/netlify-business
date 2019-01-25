@@ -15,7 +15,7 @@ export default class BlogPage extends Component {
     return (
       <div>
         <Helmet>
-          <title>Blog | Gatsby Starter Business</title>
+          <title>Blog | Inspecting UT</title>
         </Helmet>
         <section className='hero is-primary is-bold'>
           <div className='hero-body'>

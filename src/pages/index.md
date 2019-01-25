@@ -56,7 +56,7 @@ testimonials:
   - author: Subarashi San
     quote: >-
       High Mountain Home Inspections are the best in the business! They are incredibly knowledgeable, always take wonderful care of our clients, provide the most detailed reports and give our clients the piece of mind that they know exactly what they are buying! We recommend High Mountain to all of our clients!!! Thanks guys for such great service!
-meta_title: Home | Gatsby Starter Business
+meta_title: Inspecting Utah
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam

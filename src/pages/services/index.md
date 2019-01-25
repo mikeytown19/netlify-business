@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 title: Services
-meta_title: Services | Gatsby Starter Business
+meta_title: Services | Inspecting UT
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
