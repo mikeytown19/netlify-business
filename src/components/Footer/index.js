@@ -31,7 +31,7 @@ const Footer = () => {
           <div className='column has-text-centered'>
             <div>
               <p className='heading'><strong>Investment Property <br/> Disclosure</strong></p>
-              <p className='heading'><a href={landlord}>Click to Download</a></p>
+              <p className='heading'><a href={militarydiscount}>Click to Download</a></p>
             </div>
           </div>
           <div className='column has-text-centered'>
