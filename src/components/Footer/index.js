@@ -7,7 +7,7 @@ import facebook from '../../img/facebook.png'
 import instagram from '../../img/instagram.svg'
 import internachi from '../../img/internachi.png'
 import militarydiscount from '../../img/militarydiscount.jpg'
-import landlord from '../../../static/img/landlord.pdf'
+
 
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
           <div className='column has-text-centered'>
             <div>
               <p className='heading'><strong>Investment Property <br/> Disclosure</strong></p>
-              <p className='heading'><a href={landlord}>Click to Download</a></p>
+              <p className='heading'><a href='https://mikeytown19.github.io/pdf/images/Landlord.pdf' target="_blank">Click to Download</a></p>
             </div>
           </div>
           <div className='column has-text-centered'>
