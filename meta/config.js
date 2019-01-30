@@ -10,7 +10,7 @@ module.exports = {
   siteDescription: 'Inspecting homes in utah.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
-  googleTagManagerID: '', // GTM tracking ID.
+  googleTagManagerID: 'GTM-M36F6DJ', // GTM tracking ID.
   disqusShortname: 'gatsby-business-starter', // Disqus shortname.
   userName: '',
   userTwitter: '',
